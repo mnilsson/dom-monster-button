@@ -1,0 +1,14 @@
+{
+    "name": "DomMonsterButton",
+    "version": "0.1",
+    "description": "Dom Monster for us that dont have a bookmarkbar to put the bookmarklet in.",
+    "background_page": "background.html",
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "permissions": [
+        "tabs",
+        "http://*/*",
+        "https://*/*"
+    ]
+}

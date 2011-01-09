@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+
+<script>
+    //chrome.tabs.executeScript(null,
+    //    {'code': "dom_monster()"});
+    chrome.browserAction.onClicked.addListener(function(tab){
+        chrome.tabs.executeScript(null,
+        {"code": "(function(){var script=document.createElement('script');script.type='text/javascript';script.src='http://mir.aculo.us/dom-monster/dommonster.js?'+(new Date().getTime());document.getElementsByTagName('body')[0].appendChild(script);})()"}
+        );
+    });
+</script>
